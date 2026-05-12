@@ -160,7 +160,7 @@
     s.id  = '_bmw_style';
     s.textContent = `
       #_bmw_panel {
-        position: fixed; bottom: 50px; left: 10px;
+        position: fixed; top: 10px; left: 10px;
         z-index: 2147483647; font-family: 'Segoe UI', monospace;
         background: rgba(5,5,10,0.96);
         border: 1.5px solid #e05500;
@@ -308,7 +308,7 @@
     );
     if (ok) {
       buildUI();
-      console.error('[BMW E30] ✅ Prêt ! Panneau 🚗 en bas à gauche.');
+      console.error('[BMW E30] ✅ Prêt ! Panneau 🚗 en haut à gauche.');
     } else if (attempts < 90) {
       setTimeout(checkReady, 1000);
     } else {
